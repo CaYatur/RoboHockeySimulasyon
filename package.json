@@ -1,0 +1,10 @@
+{
+  "name": "robohokey-simulasyon",
+  "version": "1.0.0",
+  "description": "ROBOHOKEY 2v2 antrenman simülasyonu — DualSense ile, web tabanlı",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}

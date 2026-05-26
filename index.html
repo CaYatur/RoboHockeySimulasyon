@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROBOHOKEY Simülasyon — DualSense Antrenman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div class="score team-a">
+        <span class="tname">MAVİ (Sen)</span>
+        <span class="snum" id="scoreA">0</span>
+      </div>
+      <div class="center">
+        <div id="clock">02:00</div>
+        <div id="period">1. DEVRE</div>
+        <div id="state">Başlamak için ▶ Başlat / OPTIONS</div>
+      </div>
+      <div class="score team-b">
+        <span class="snum" id="scoreB">0</span>
+        <span class="tname">KIRMIZI (Bot)</span>
+      </div>
+    </header>
+
+    <canvas id="field" width="520" height="760"></canvas>
+
+    <footer id="bar">
+      <div id="pad">🎮 Kumanda: <b id="padName">bağlı değil — bir tuşa bas</b></div>
+      <div id="limit">Hız limiti: <b id="limitVal">75%</b></div>
+      <div class="btns">
+        <button id="startBtn">▶ Başlat</button>
+        <button id="resetBtn">↺ Sıfırla</button>
+        <button id="pauseBtn">⏸ Duraklat</button>
+      </div>
+    </footer>
+
+    <section id="help">
+      <b>Kontroller (DualSense):</b>
+      R2 = ileri gaz &nbsp;·&nbsp; L2 = geri/fren &nbsp;·&nbsp; Sol çubuk = direksiyon &nbsp;·&nbsp;
+      ○ = TURBO &nbsp;·&nbsp; D-pad ↑/↓ = hız limiti &nbsp;·&nbsp; OPTIONS = başlat/duraklat
+      <br />
+      <b>Klavye (yedek):</b>
+      ↑/W = gaz &nbsp;·&nbsp; ↓/S = geri &nbsp;·&nbsp; ←→ / A D = direksiyon &nbsp;·&nbsp;
+      Shift = turbo &nbsp;·&nbsp; [ ] = hız limiti &nbsp;·&nbsp; Boşluk = başlat/duraklat
+    </section>
+  </div>
+
+  <script src="sim.js"></script>
+</body>
+</html>
